@@ -653,9 +653,9 @@ function ouvrirPopupExercices() {
 
   const liste = document.getElementById("liste-exercices");
   liste.innerHTML = exercicesTries.map(ex => `
-    <li style="margin-bottom:10px;">
-      <img src="${ex.image}" alt="${ex.nom}" style="width:40px; vertical-align:middle; margin-right:10px;">
-      ${ex.nom}
+    <li style="margin-bottom:10px; display:flex; align-items:center; gap:10px;">
+      ${ex.image.map(img => `<img src="${img}" alt="${ex.nom}" style="width:40px;">`).join("")}
+      <span>${ex.nom}</span>
     </li>
   `).join("");
 }
