@@ -33,7 +33,7 @@
 
   "boss": [
     { "nom": "La Chose", "regle_speciale": "repiocher_inventaire", "description": "Te fait perdre tout ton équipement puis t’en redonne au hasard.", "pv": 4000, "image": "img/cho.png" },
-    { "nom": "Roi des Spectres", "regle_speciale": "gagne_pv_chaque_minute", "description": "Chaque minute, il gagne 100 PV… comme si la mort elle-même faisait du gainage.", "pv": 3000, "image": "img/roi.png" },
+    { "nom": "Roi des Spectres", "regle_speciale": "gagne_pv_chaque_minute", "description": "Chaque minute, il gagne 1000 PV… comme si la mort elle-même faisait du gainage.", "pv": 3000, "image": "img/roi.png" },
     { "nom": "La Sorcière", "regle_speciale": "enchainement_exercices", "description": "T’impose 5 exercices d’affilée.", "pv": 3000, "image": "img/sor.png" },
     { "nom": "Le Séché", "regle_speciale": "refaire_defis_vaincus", "description": "Te fait refaire tous les défis des monstres déjà vaincus.", "pv": 3000, "image": "img/seche.png" },
     { "nom": "Nécromancien", "regle_speciale": "resurrection", "description": "Fait revenir d’anciens monstres à combattre.", "pv": 1000, "image": "img/necro.png" },
