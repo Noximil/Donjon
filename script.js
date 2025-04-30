@@ -244,7 +244,7 @@ function effetMarchandMystere() {
     const div = document.createElement("div");
     div.classList.add("carte");
     div.innerHTML = `
-      <img src="${objet.image}" alt="${objet.nom}" width="50%"><br>
+      <img src="${objet.image}" alt="${objet.nom}" width="80%"><br>
       <strong>${objet.nom}</strong><br>
       <em>${objet.type}</em><br>
       <small>${objet.effet}</small>
@@ -645,6 +645,7 @@ historiqueMonstres.forEach(monstre => {
 function ouvrirPopupExercices() {
   const popup = document.getElementById("popup-exercices");
   popup.classList.add("active");
+  popup.classList.remove("ferme"); // (optionnel si tu ajoutes une classe CSS pour fermeture)
 
   const exercicesTries = [...exercices].sort((a, b) =>
     a.nom.localeCompare(b.nom)
@@ -660,7 +661,8 @@ function ouvrirPopupExercices() {
 }
 
 function fermerPopupExercices() {
-  document.getElementById("popup-exercices").style.display = "none";
+  const popup = document.getElementById("popup-exercices");
+  popup.classList.remove("active");
 }
 
 function demarrerChrono() {
@@ -704,7 +706,7 @@ function mettreAJourBarreProgression() {
 function ajouterFallbackImage(imgElement) {
   imgElement.onerror = () => {
     imgElement.onerror = null;
-    imgElement.src = "/img/default.png";
+    imgElement.src = "img/default.png";
   };
 }
 
