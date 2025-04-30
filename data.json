@@ -66,20 +66,20 @@
   ],
 
   "exercices": [
-    { "nom": "Superman", "image": "img/sport.png" },
-    { "nom": "Squat pulsé", "image": "img/sport.png" },
-    { "nom": "Fente", "image": "img/sport.png" },
-    { "nom": "Child's pose", "image": "img/sport.png" },
-    { "nom": "Squat", "image": "img/sport.png" },
-    { "nom": "Planche", "image": "img/sport.png" },
-    { "nom": "Hollow Rock", "image": "img/sport.png" },
-    { "nom": "Burpees Push-Ups", "image": "img/sport.png" },
-    { "nom": "Jumping Jack", "image": "img/sport.png" },
-    { "nom": "Push-Up", "image": "img/sport.png" },
-    { "nom": "Planche Rotation", "image": "img/sport.png" },
-    { "nom": "High Knee Jump", "image": "img/sport.png" },
-    { "nom": "Abdos Ski", "image": "img/sport.png" },
-    { "nom": "Pompe Plongée", "image": "img/sport.png" },
-    { "nom": "Pompe Spiderman", "image": "img/sport.png" }
+    { "nom": "Superman", "image": ["img/sport1.png", "img/sport2.png"] },
+    { "nom": "Squat pulsé", "image": ["img/sport1.png", "img/sport2.png"] },
+    { "nom": "Fente", "image": ["img/sport1.png", "img/sport2.png"] },
+    { "nom": "Child's pose", "image": ["img/sport1.png", "img/sport2.png"] },
+    { "nom": "Squat", "image": ["img/sport1.png", "img/sport2.png"] },
+    { "nom": "Planche", "image": ["img/sport1.png", "img/sport2.png"] },
+    { "nom": "Hollow Rock", "image": ["img/sport1.png", "img/sport2.png"] },
+    { "nom": "Burpees Push-Ups", "image": ["img/sport1.png", "img/sport2.png"] },
+    { "nom": "Jumping Jack", "image": ["img/sport1.png", "img/sport2.png"] },
+    { "nom": "Push-Up", "image": ["img/sport1.png", "img/sport2.png"] },
+    { "nom": "Planche Rotation", "image": ["img/sport1.png", "img/sport2.png"] },
+    { "nom": "High Knee Jump", "image": ["img/sport1.png", "img/sport2.png"] },
+    { "nom": "Abdos Ski", "image": ["img/sport1.png", "img/sport2.png"] },
+    { "nom": "Pompe Plongée", "image": ["img/sport1.png", "img/sport2.png"] },
+    { "nom": "Pompe Spiderman", "image": ["img/sport1.png", "img/sport2.png"] }
   ]
 }
