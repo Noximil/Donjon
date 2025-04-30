@@ -704,7 +704,7 @@ function mettreAJourBarreProgression() {
 function ajouterFallbackImage(imgElement) {
   imgElement.onerror = () => {
     imgElement.onerror = null;
-    imgElement.src = "img/default.png";
+    imgElement.src = "/img/default.png";
   };
 }
 
