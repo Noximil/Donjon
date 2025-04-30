@@ -219,6 +219,7 @@ ul {
   list-style: none;
   padding: 0;
 }
+
 /* === Pop Up Marchand === */
 
 .popup-choix {
@@ -226,7 +227,7 @@ ul {
   top: 20%;
   left: 10%;
   right: 10%;
-  max-height: 70vh;
+  max-height: 75vh;
   overflow-y: auto;
   background: #111;
   border: 2px solid #888;
@@ -234,25 +235,24 @@ ul {
   z-index: 999;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 
 .popup-choix .carte {
   display: inline-block;
-  width: 140px;
-  height: 220px;
+  width: 150px;
+  height: 250px;
   margin: 10px;
   padding: 10px;
   background: #222;
   border: 1px solid #444;
-  cursor: pointer;
   border-radius: 8px;
   text-align: center;
   vertical-align: top;
   box-sizing: border-box;
-  overflow: hidden;         
-  word-wrap: break-word;
+  overflow: hidden;
   white-space: normal;
+  word-wrap: break-word;
 }
 
 .popup-choix .carte img {
@@ -268,13 +268,19 @@ ul {
   font-size: 14px;
 }
 
-.popup-choix .carte em,
+.popup-choix .carte em {
+  display: block;
+  font-size: 12px;
+  color: #bbb;
+  margin: 2px 0;
+}
+
 .popup-choix .carte small {
   display: block;
   font-size: 12px;
   color: #ccc;
   margin: 2px 0;
-  max-height: 60px;
+  max-height: 70px;
   overflow-y: auto;
 }
 
@@ -323,4 +329,19 @@ a.retour:hover {
   50% { transform: scale(1.1); }
   70% { transform: scale(0.9); }
   100% { transform: scale(1); }
+}
+
+/* === Capsule === */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
 }
