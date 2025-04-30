@@ -188,36 +188,34 @@ ul {
 
 /* === Popup Exercices === */
 .popup-exercices {
-  display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.7);
-  z-index: 1000;
-  justify-content: center;
-  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background: #000000de;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.872);
+  max-width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: none;
 }
 
 .popup-exercices.active {
-  display: flex;
+  display: block;
 }
 
 .popup-contenu {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 400px;
-  width: 90%;
   text-align: center;
-  overflow: auto;
-  max-height: 90%;
 }
 
 .liste-exercices {
   list-style: none;
   padding: 0;
+  margin-top: 10px;
 }
 
 /* === Pop Up Marchand === */
