@@ -244,7 +244,7 @@ function effetMarchandMystere() {
     const div = document.createElement("div");
     div.classList.add("carte");
     div.innerHTML = `
-      <img src="${objet.image}" alt="${objet.nom}" width="80%"><br>
+      <img src="${objet.image}" alt="${objet.nom}" width="50%"><br>
       <strong>${objet.nom}</strong><br>
       <em>${objet.type}</em><br>
       <small>${objet.effet}</small>
