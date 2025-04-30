@@ -1,0 +1,85 @@
+{
+  "monstres": [
+    { "nom": "Gobelin Justicier", "pv": 400, "defi": "Fait 50 Superman avant le combat", "recompenses": 1, "image": "img/gob.png" },
+    { "nom": "Squathulhu", "pv": 500, "defi": "Maintient 30s de squats avant le combat", "recompenses": 1, "image": "img/ctu.png" },
+    { "nom": "Crunchzilla", "pv": 400, "defi": "Fait 50 Crunch avant le combat", "recompenses": 1, "image": "img/zila.png" },
+    { "nom": "Gainazgul", "pv": 400, "defi": "Maintient 60s de planche avant le combat", "recompenses": 1, "image": "img/naz.png" },
+    { "nom": "Hollowcroc", "pv": 400, "defi": "Fait 50 Hollow Rock avant le combat", "recompenses": 1, "image": "img/cro.png" },
+    { "nom": "Gobelin Justicier", "pv": 400, "defi": "Fait 50 Superman avant le combat", "recompenses": 1, "image": "img/gob.png" },
+    { "nom": "Squathulhu", "pv": 500, "defi": "Maintient 30s de squats avant le combat", "recompenses": 1, "image": "img/ctu.png" },
+    { "nom": "Crunchzilla", "pv": 400, "defi": "Fait 50 Crunch avant le combat", "recompenses": 1, "image": "img/zila.png" },
+    { "nom": "Gainazgul", "pv": 400, "defi": "Maintient 60s de planche avant le combat", "recompenses": 1, "image": "img/naz.png" },
+    { "nom": "Hollowcroc", "pv": 400, "defi": "Fait 50 Hollow Rock avant le combat", "recompenses": 1, "image": "img/cro.png" },
+    { "nom": "Gobelin Justicier", "pv": 400, "defi": "Fait 50 Superman avant le combat", "recompenses": 1, "image": "img/gob.png" },
+    { "nom": "Squathulhu", "pv": 500, "defi": "Maintient 30s de squats avant le combat", "recompenses": 1, "image": "img/ctu.png" },
+    { "nom": "Crunchzilla", "pv": 400, "defi": "Fait 50 Crunch avant le combat", "recompenses": 1, "image": "img/zila.png" },
+    { "nom": "Gainazgul", "pv": 400, "defi": "Maintient 60s de planche avant le combat", "recompenses": 1, "image": "img/naz.png" },
+    { "nom": "Hollowcroc", "pv": 400, "defi": "Fait 50 Hollow Rock avant le combat", "recompenses": 1, "image": "img/cro.png" },
+    { "nom": "Gobelin Justicier", "pv": 400, "defi": "Fait 50 Superman avant le combat", "recompenses": 1, "image": "img/gob.png" },
+    { "nom": "Squathulhu", "pv": 500, "defi": "Maintient 30s de squats avant le combat", "recompenses": 1, "image": "img/ctu.png" },
+    { "nom": "Crunchzilla", "pv": 400, "defi": "Fait 50 Crunch avant le combat", "recompenses": 1, "image": "img/zila.png" },
+    { "nom": "Gainazgul", "pv": 400, "defi": "Maintient 60s de planche avant le combat", "recompenses": 1, "image": "img/naz.png" },
+    { "nom": "Hollowcroc", "pv": 400, "defi": "Fait 50 Hollow Rock avant le combat", "recompenses": 1, "image": "img/cro.png" },
+    { "nom": "PVstein", "pv": 1500, "defi": "Fait 100 Jumping Jack avant le combat", "recompenses": 2, "image": "img/pv.png" },
+    { "nom": "Gluargue", "pv": 1000, "defi": "Utilise qu'une seule arme pendant tout le combat", "recompenses": 2, "image": "img/glu.png" }
+  ],
+
+  "monstres_spe": [
+    { "nom": "Le Marchand Mystérieux", "special": "effetMarchandMystere", "description": "T’offre 3 équipements aléatoires.", "image": "img/mar.png" },
+    { "nom": "Le Mage Bénévole", "special": "effetMageBenevole", "description": "Ajoute un bonus dans ton inventaire.", "image": "img/ben.png" },
+    { "nom": "L'Esprit du Combat", "special": "effetEspritCombat", "description": "Double tes dégâts pour tout le donjon.", "image": "img/spir.png" },
+    { "nom": "La Brume Protectrice", "special": "effetBrumeProtectrice", "description": "Ignore les défis physiques à venir.", "image": "img/bru.png" }
+  ],
+
+  "boss": [
+    { "nom": "La Chose", "regle_speciale": "repiocher_inventaire", "description": "Te fait perdre tout ton équipement puis t’en redonne au hasard.", "pv": 4000, "image": "img/cho.png" },
+    { "nom": "Roi des Spectres", "regle_speciale": "gagne_pv_chaque_minute", "description": "Chaque minute, il gagne 100 PV… comme si la mort elle-même faisait du gainage.", "pv": 3000, "image": "img/roi.png" },
+    { "nom": "La Sorcière", "regle_speciale": "enchainement_exercices", "description": "T’impose 5 exercices d’affilée.", "pv": 3000, "image": "img/sor.png" },
+    { "nom": "Le Séché", "regle_speciale": "refaire_defis_vaincus", "description": "Te fait refaire tous les défis des monstres déjà vaincus.", "pv": 3000, "image": "img/seche.png" },
+    { "nom": "Nécromancien", "regle_speciale": "resurrection", "description": "Fait revenir d’anciens monstres à combattre.", "pv": 1000, "image": "img/necro.png" },
+    { "nom": "Colosse Antique", "regle_speciale": "titan", "description": "Passe à 10000 PV !", "pv": 3000, "image": "img/colosse.png" }
+  ],
+
+  "objets": [
+    { "nom": "Épée en Bois", "type": "arme", "effet": "Execute 1 Abdos Ski pour faire 10 d'attaque", "image": "img/arme.png" },
+    { "nom": "Épée en Bois", "type": "arme", "effet": "Execute 1 Abdos Ski pour faire 10 d'attaque", "image": "img/arme.png" },
+    { "nom": "Bouclier en Bois", "type": "arme", "effet": "Execute 1 Fente pour faire 10 d'attaque", "image": "img/arme.png" },
+    { "nom": "Bouclier en Bois", "type": "arme", "effet": "Execute 1 Fente pour faire 10 d'attaque", "image": "img/arme.png" },
+    { "nom": "Épée en Fonte", "type": "arme", "effet": "Execute 1 Pompe Plongée pour faire 50 d'attaque", "image": "img/arme.png" },
+    { "nom": "Épée en Fonte", "type": "arme", "effet": "Execute 1 Pompe Plongée pour faire 50 d'attaque", "image": "img/arme.png" },
+    { "nom": "Gants de Frappe", "type": "arme", "effet": "Execute 1 Squat pour faire 10 d'attaque", "image": "img/arme.png" },
+    { "nom": "Gants de Frappe", "type": "arme", "effet": "Execute 1 Squat pour faire 10 d'attaque", "image": "img/arme.png" },
+    { "nom": "Lance Antique", "type": "arme", "effet": "10sec. de Squat Pulsé pour faire 100 d'attaque", "image": "img/arme.png" },
+    { "nom": "Masse Mystique", "type": "arme", "effet": "1 Squat Pulsé et 1 Pompe Spiderman pour faire 100 d'attaque", "image": "img/arme.png" },
+    { "nom": "Gants Anciens", "type": "arme", "effet": "Fait un Max de Punch pendant 10s pour faire 50 d'attaque", "image": "img/arme.png" },
+    { "nom": "Gants Anciens", "type": "arme", "effet": "Fait un Max de Punch pendant 10s pour faire 50 d'attaque", "image": "img/arme.png" },
+    { "nom": "Couteaux", "type": "arme", "effet": "Execute 1 Planche Rotation pour faire 10 d'attaque", "image": "img/arme.png" },
+    { "nom": "Couteaux", "type": "arme", "effet": "Execute 1 Planche Rotation pour faire 10 d'attaque", "image": "img/arme.png" },
+    { "nom": "Haltere", "type": "arme", "effet": "Execute 1 Push-Up pour faire 10 d'attaque", "image": "img/arme.png" },
+    { "nom": "Haltere", "type": "arme", "effet": "Execute 1 Push-Up pour faire 10 d'attaque", "image": "img/arme.png" },
+    { "nom": "Epee de Tasmina", "type": "arme", "effet": "1 Jumping Jack et 1 Fente pour faire 50 d'attaque", "image": "img/arme.png" },
+    { "nom": "L'arc Defaune", "type": "arme", "effet": "15sec de Squat Pulsé pour faire 50 d'attaque", "image": "img/arme.png" },
+    { "nom": "Potion de Poisson", "type": "bonus", "effet": "Bat le monstre suivant", "image": "img/potion.png" },
+    { "nom": "Potion Sombre", "type": "bonus", "effet": "Bat les deux monstre suivant tu ne peux plus te servir des  effets rencontre et des bonus", "image": "img/potion.png" },
+    { "nom": "Potion Quantique", "type": "bonus", "effet": "Tu peux multiplier ou diviser par deux le temps de chacune de tes armes ou des monstres rencontrés", "image": "img/potion.png" },
+    { "nom": "Potion de Vivifiante", "type": "bonus", "effet": "La puissance des attaque est multiplié par deux", "image": "img/potion.png" }
+  ],
+
+  "exercices": [
+    { "nom": "Superman", "image": "img/sport.png" },
+    { "nom": "Squat pulsé", "image": "img/sport.png" },
+    { "nom": "Fente", "image": "img/sport.png" },
+    { "nom": "Child's pose", "image": "img/sport.png" },
+    { "nom": "Squat", "image": "img/sport.png" },
+    { "nom": "Planche", "image": "img/sport.png" },
+    { "nom": "Hollow Rock", "image": "img/sport.png" },
+    { "nom": "Burpees Push-Ups", "image": "img/sport.png" },
+    { "nom": "Jumping Jack", "image": "img/sport.png" },
+    { "nom": "Push-Up", "image": "img/sport.png" },
+    { "nom": "Planche Rotation", "image": "img/sport.png" },
+    { "nom": "High Knee Jump", "image": "img/sport.png" },
+    { "nom": "Abdos Ski", "image": "img/sport.png" },
+    { "nom": "Pompe Plongée", "image": "img/sport.png" },
+    { "nom": "Pompe Spiderman", "image": "img/sport.png" }
+  ]
+}

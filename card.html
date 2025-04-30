@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cartes - Donjon Solo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>📖 Toutes les Cartes</h1>
+
+  <section id="cartes-container">
+    <!-- Sections dynamiques injectées ici -->
+  </section>
+
+  <a class="retour" href="index.html">← Retour au jeu</a>
+
+  <script>
+    fetch("data.json")
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById("cartes-container");
+
+        const categories = [
+          { key: "monstres", label: "Monstres" },
+          { key: "monstres_spe", label: "🌟 Rencontres 🌟" },
+          { key: "boss", label: "👑 Boss 👑" },
+          { key: "objets", label: "Objets" }
+        ];
+
+        categories.forEach(cat => {
+  const list = [...data[cat.key]].sort((a, b) => a.nom.localeCompare(b.nom));
+
+  const section = document.createElement("section");
+  section.innerHTML = `<h2 class="section-title">${cat.label}</h2>`;
+
+  const div = document.createElement("div");
+  div.classList.add("cartes");
+
+  const nomsVus = new Set(); // 🔥 pour éviter les doublons
+
+  list.forEach(item => {
+    if (nomsVus.has(item.nom)) return; // ⚡ saute si déjà vu
+    nomsVus.add(item.nom);
+
+    const c = document.createElement("div");
+    c.classList.add("carte");
+
+    c.innerHTML = `
+      <img src="${item.image}" alt="${item.nom}">
+      <h3>${item.nom}</h3>
+      ${item.pv ? `<p>PV : ${item.pv}</p>` : ""}
+      ${item.defi ? `<p>Défi : ${item.defi}</p>` : ""}
+      ${item.effet ? `<p>${item.effet}</p>` : ""}
+      ${item.recompenses ? `<p>🎒 Récompenses : ${item.recompenses}</p>` : ""}
+      ${item.type ? `<p>Type : ${item.type}</p>` : ""}
+      ${item.regle_speciale ? `<p>Effet : ${item.description}</p>` : ""}
+      ${item.special ? `<p>Effet : ${item.description}</p>` : ""}
+    `;
+
+    div.appendChild(c);
+  });
+
+  section.appendChild(div);
+  container.appendChild(section);
+});
+      })
+      .catch(error => {
+        document.getElementById("cartes-container").innerHTML = "<p>Erreur de chargement des cartes 😢</p>";
+        console.error("Erreur data.json : ", error);
+      });
+  </script>
+
+</body>
+</html>

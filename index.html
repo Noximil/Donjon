@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donjon du sport</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Le Donjon du Sport</h1>
+
+  <div id="bonus-actifs"></div>
+
+  <div id="zone-monstre" class="carte">
+    <div id="monstre-actuel"></div>
+    <div id="defi-courant" class="defi-supplementaire"></div>
+  </div>
+
+  <div id="evenement-special" class="carte-evenement" style="display: none;">
+    <h2 id="evenement-titre"></h2>
+    <img id="evenement-image" src="" alt="" width="200">
+    <p id="evenement-texte"></p>
+    <button onclick="fermerEvenementSpecial()" class="bouton-principal">Fait</button>
+  </div>
+
+  <div id="jeu">
+    <div id="actions">
+      <button id="btn-monstre-battu" class="bouton-principal">Monstre Battu</button>
+      <button id="btn-esquive" class="bouton-principal">Esquiver</button>
+    </div>
+
+    <div id="zone-chrono">
+      <div id="affichage-chrono">00:00:000</div>
+      <div class="barre-chrono">
+        <div id="barre-progression"></div>
+      </div>
+    </div>
+
+    <div id="inventaire">
+      <h2>🎒 Inventaire</h2>
+      <ul id="liste-equipement"></ul>
+      <button id="btn-utiliser-bonus" class="bouton-principal">Utiliser Bonus</button>
+    </div>
+
+    <hr>
+
+    <div id="menu-boutons">
+      <button id="btn-historique" class="bouton-secondaire">Historique</button>
+      <div id="historique" class="bloc-historique" style="display: none">
+        <h2>Journal des Exploits</h2>
+        <ul id="liste-historique"></ul>
+      </div>
+
+      <button id="btn-regles" class="bouton-secondaire">Voir les règles</button>
+      <button onclick="ouvrirPopupExercices()" class="bouton-secondaire">Voir tous les exercices</button>
+      <button id="btn-recommencer" class="bouton-secondaire">Recommencer</button>
+    </div>
+
+      <hr>
+      <button onclick="window.location.href='card.html'" class="bouton-secondaire" style="margin: 40px;">Liste des cartes</button>
+    
+  </div>
+
+  <!-- Modal Exercices -->
+  <div id="popup-exercices" class="popup-exercices">
+    <div class="popup-contenu">
+      <h2>Exercices Disponibles</h2>
+      <ul id="liste-exercices" class="liste-exercices"></ul>
+      <button onclick="fermerPopupExercices()" class="bouton-secondaire">Fermer</button>
+    </div>
+  </div>
+
+  <div id="choix-marchand" style="display: none;" class="popup-choix"></div>
+
+  <footer id="signature">
+    Site non officiel – Fait par N0x1
+  </footer>
+ <footer>
+  <button onclick="window.open('https://www.dungeonoffitness.com/', '_blank')" class="bouton-secondaire">
+    Inspiré du jeu Dungeon of Fitness
+  </button>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

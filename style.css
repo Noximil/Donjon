@@ -1,0 +1,291 @@
+/* === Base === */
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #e0e0e0;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #cccccc;
+}
+
+section {
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* === Cartes === */
+.cartes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.carte {
+  background-color: #1e1e1e;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 2px 2px 8px #000;
+  text-align: center;
+}
+
+.carte img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.carte h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.carte p {
+  font-size: 0.9rem;
+  margin: 4px 0;
+}
+
+/* === Boutons === */
+.bouton-principal, .bouton-secondaire {
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.bouton-principal {
+  margin: 10px 5px;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.bouton-principal:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+.bouton-secondaire {
+  margin: 6px 5px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.bouton-secondaire:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+#menu-boutons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#menu-boutons button {
+  width: 80%;
+  max-width: 300px;
+}
+
+/* === Chrono === */
+#zone-chrono {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#affichage-chrono {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #f0f0f0;
+}
+
+.barre-chrono {
+  background: #333;
+  width: 80%;
+  height: 18px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#barre-progression {
+  background: #00ff00;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s linear;
+}
+
+/* === Inventaire === */
+#inventaire {
+  margin-top: 40px;
+}
+
+#liste-equipement {
+  padding: 0;
+}
+
+#liste-equipement li {
+  margin: 8px 0;
+  list-style: none;
+  font-size: 16px;
+}
+
+/* === Historique === */
+.bloc-historique {
+  background-color: #1a1a1a;
+  padding: 10px 15px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+
+.bloc-historique ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bloc-historique li {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  color: #00ff00;
+  margin: 2px 0;
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* === Popup Exercices === */
+.popup-exercices {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-exercices.active {
+  display: flex;
+}
+
+.popup-contenu {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  overflow: auto;
+  max-height: 90%;
+}
+
+.liste-exercices {
+  list-style: none;
+  padding: 0;
+}
+/* === Pop Up Marchand === */
+
+.popup-choix {
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  right: 10%;
+  background: #111;
+  border: 2px solid #888;
+  padding: 20px;
+  z-index: 999;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.popup-choix .carte {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background: #222;
+  border: 1px solid #444;
+  cursor: pointer;
+}
+
+/* === Lien retour === */
+a.retour {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+a.retour:hover {
+  background-color: #555;
+}
+
+/* === Animations === */
+
+@keyframes flash {
+  0% { background-color: #fffa; }
+  100% { background-color: transparent; }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes affaibli {
+  from { background-color: red; }
+  to { background-color: #1e1e1e; }
+}
+
+@keyframes rebondir {
+  0% { transform: scale(0.5); }
+  50% { transform: scale(1.1); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
