@@ -189,16 +189,17 @@ ul {
 /* === Popup Exercices === */
 .popup-exercices {
   position: fixed;
-  top: 50%;
+  top: 10%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   z-index: 999;
   background: #000000de;
   color: white;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.872);
-  max-width: 120vw;
+  width: 90vw;
+  max-width: 600px;
   max-height: 80vh;
   overflow-y: auto;
   display: none;
